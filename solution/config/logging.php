@@ -41,6 +41,11 @@ return [
             'ignore_exceptions' => false,
         ],
 
+        'heroku_stack' => [
+            'driver' => 'stack',
+            'channels' => ['errorlog'],
+        ],
+
         'single' => [
             'driver' => 'single',
             'path' => storage_path('logs/laravel.log'),
